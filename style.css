@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout .header {
+  display: flex;
+  flex: 1;
+  background-color: rgb(4, 138, 172);
+  flex-direction: row;
+  transition: border-radius 0.6s ease-in-out;
+  position: relative;
+}
+
+.layout .header:hover {
+  border-radius: 0% 0% 100% 0%;
+}
+.layout .header .image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.layout .header .image img {
+  height: 300px;
+  width: 350px;
+}
+.layout .header .content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 10px;
+  background-color: aliceblue;
+}
+.layout .header .content .contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.layout .header .content .contact p {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.layout .header .content .social-media {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  gap: 10px;
+}
+.layout .main {
+  display: flex;
+  flex: 1;
+  background-color: white;
+  flex-direction: column;
+  margin: 30px 50px;
+  gap: 20px;
+}
+.layout .main h2 {
+  margin-top: 10px;
+}
+.layout .main .row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 20px;
+}
+.layout .main .row .card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.layout .main .row .card .top {
+  display: flex;
+  flex: 1;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.layout .main .row .card .bottom {
+  display: flex;
+  flex: 1;
+  background-color: white;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.layout .main .row .card .bottom .project {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.layout .main .row .card .red {
+  background-color: red;
+}
+.layout .main .row .card .purple {
+  background-color: rgb(122, 26, 185);
+}
+.layout .main .row .card .green {
+  background-color: rgb(17, 190, 11);
+}
+.layout .main .row .card .pink {
+  background-color: rgb(255, 0, 221);
+}
+.layout .main .row .card .yellow {
+  background-color: rgb(180, 163, 5);
+}
+.layout .main .row .card .blue {
+  background-color: rgb(24, 131, 150);
+}
+.layout .footer {
+  display: flex;
+  flex: 1;
+  background-color: rgb(4, 138, 172);
+  color: aliceblue;
+  flex-direction: row;
+  gap: 30px;
+}
+.layout .footer .content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  gap: 10px;
+}
+.layout .footer .content .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.layout .footer .content .contact img {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.layout .footer .content .social-media {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.layout .footer .image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.layout .footer .image img {
+  height: 250px;
+  width: 350px;
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .layout .footer {
+    flex-direction: column;
+  }
+  .layout .footer .image {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .layout .header {
+    flex-direction: column;
+  }
+  .layout .header .image {
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  .layout .header .content {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .layout .main .row {
+    flex-direction: column;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .layout .footer {
+    flex-direction: column;
+  }
+  .layout .footer .image {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .layout .header {
+    flex-direction: column;
+  }
+  .layout .header .image {
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  .layout .header .image img {
+    width: 650px;
+  }
+  .layout .header .content {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .layout .footer .image img {
+    width: 650px;
+  }
+  .layout .main .row {
+    flex-direction: column;
+  }
+}
+/* Tablet */
+@media (max-width: 990px) {
+}
