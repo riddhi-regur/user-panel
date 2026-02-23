@@ -137,36 +137,44 @@ body {
   background-color: rgb(24, 131, 150);
 }
 .layout .footer {
+  color: aliceblue;
   display: flex;
   background-color: rgb(4, 138, 172);
-  color: aliceblue;
   flex-direction: row;
+  position: relative;
 }
+
 .layout .footer .content {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  margin: 50px;
   gap: 10px;
-  margin-left: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 .layout .footer .content .contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-right: 80px;
+  padding: 20px;
 }
-.layout .header .content .contact p {
+.layout .footer .content .contact h1 {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.layout .footer .content .contact p {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 .layout .footer .content .contact img {
   height: 15px;
   width: 15px;
   margin-right: 10px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .layout .footer .content .social-media {
   display: flex;
@@ -179,9 +187,9 @@ body {
   justify-content: flex-end;
   align-items: center;
   flex: 1;
+  margin-right: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 50px;
   gap: 10px;
 }
 .layout .footer .image img {
@@ -189,86 +197,124 @@ body {
   width: 530px;
 }
 
-/* Tablet */
 @media (max-width: 990px) {
-  .layout .footer {
-    flex-direction: column;
-  }
-  .layout .footer .image {
-    margin-left: 50px;
-    margin-bottom: 50px;
-  }
   .layout .header {
     flex-direction: column;
   }
-  .layout .header .image {
-    margin-right: 50px;
-    margin-top: 50px;
+  .container {
+    flex-direction: column;
   }
-  .layout .header .image img {
-    width: 650px;
+  .layout .header .image {
+    justify-content: center;
+    margin-left: 0;
   }
   .layout .header .content {
     margin-left: 50px;
-    margin-bottom: 50px;
   }
-  .layout .footer .image img {
-    width: 650px;
+  .layout .main {
+    flex-direction: column;
   }
   .layout .main .row {
     flex-direction: column;
   }
-} /* Mobile */
+  .layout .footer {
+    flex-direction: column;
+  }
+  .layout .footer .image {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .layout .footer .content {
+    margin-right: 50px;
+  }
+}
 @media (max-width: 767px) {
+  .layout .header {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .layout .header .image {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .layout .header .content {
+    margin-left: 50px;
+  }
+  .layout .main {
+    flex-direction: column;
+  }
+  .layout .main .row {
+    flex-direction: column;
+  }
   .layout .footer {
     flex-direction: column;
   }
   .layout .footer .image {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin-left: 0;
   }
-  .layout .header {
-    flex-direction: column;
-  }
-  .layout .header .image {
+  .layout .footer .content {
     margin-right: 50px;
-    margin-top: 50px;
   }
   .layout .header .image img {
-    width: 650px;
-  }
-  .layout .header .content {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    height: 200px;
+    width: 400px;
   }
   .layout .footer .image img {
-    width: 650px;
-  }
-  .layout .main .row {
-    flex-direction: column;
+    height: 200px;
+    width: 400px;
   }
 }
 /* Small phones */
 @media (max-width: 480px) {
+  .layout .header {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .layout .header .image {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .layout .header .content {
+    margin-left: 50px;
+  }
+  .layout .main {
+    flex-direction: column;
+  }
+  .layout .main .row {
+    flex-direction: column;
+  }
   .layout .footer {
     flex-direction: column;
   }
   .layout .footer .image {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin-left: 0;
   }
-  .layout .header {
+  .layout .footer .content {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .layout .header .image img {
+    height: 200px;
+    width: 200px;
+  }
+  .layout .footer .image img {
+    height: 200px;
+    width: 200px;
+  }
+  .contact-item {
     flex-direction: column;
   }
-  .layout .header .image {
-    margin-right: 50px;
-    margin-top: 50px;
+  p,
+  span {
+    overflow-wrap: anywhere;
   }
-  .layout .header .content {
-    margin-left: 50px;
-    margin-bottom: 50px;
-  }
-  .layout .main .row {
-    flex-direction: column;
+  .layout .footer .content .contact {
+    padding: 0px;
   }
 }
